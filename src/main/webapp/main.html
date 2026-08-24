@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY ANILOG</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<section class="header-content">
+    <h1><a href="">MY ANILOG</a></h1>
+    <!-- 상단 네비게이션 (좌측 정렬 유지) -->
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Board</a></li>
+                <li>
+                	<section class="search">
+						<select>
+							<option>제목</option>
+							<option>내용</option>
+						</select>
+						<input type="text" size="10" />
+						<button>Search</button>
+					</section>
+                </li>
+            </ul>
+        </nav>
+</section>
+
+</header>
+
+<section id="container">
+
+
+    <!-- 메인 콘텐츠 영역 (가운데 정렬) -->
+    <main class="main-content">
+        <section class="about">
+            <section class="about-title">About This Site</section>
+            <section class="about-desc">This is my animation review blog.</section>
+        </section>
+        
+        <hr class="divider">
+
+        <section class="board-section">
+            <h2>Recent Posts</h2>
+            
+            <ul class="post-list">
+                <!-- 1번째 글: 이미지 + 제목 + 내용 -->
+                <li class="post-item first-post">
+                    <div class="post-img-wrapper">
+                        <img src="test.jpg" alt="Thumnail" width="200" height="200"/>
+                    </div>
+                    <section class="post-body">
+                        <h3>[리뷰] 최신 애니메이션을 보고 나서</h3>
+                        <p>이번 분기 가장 기대작이었던 작품의 리뷰입니다. 작화와 연출이 매우 뛰어났으며...</p>
+                    </section>
+                </li>
+
+                <!-- 2번째 글: 제목 + 내용 나란히 -->
+                <li class="post-item text-post">
+                    <span class="post-title">명작 애니메이션 다시보기 시리즈 03</span>
+                    <span class="post-desc">10년이 지나도 여전히 가슴을 울리는 명작의 매력을 분석해 봅니다.</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <a href="">서비스 이용약관</a> | <a href="">개인정보 처리 방침</a><br>
+        Contact Me: v.tang3203@gmail.com<br>
+        2026 Kim Gyeonkang. All right reserved.
+    </footer>
+</section>
+</body>
+</html>

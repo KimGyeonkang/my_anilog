@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	background-color: white;
+	color: black;
+	line-height: 1.6;
+}
+
+ul, li {
+	list-style: none;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+header {
+	padding: 30px 0 30px 0;
+}
+
+.header-content {
+	display: flex;
+	justify-content: space-between;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 20px;
+	align-items: center;
+}
+
+nav ul {
+	display: flex;
+	justify-content: flex-end;
+	gap: 20px;
+}
+
+.search {
+	dixplay: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.search select,
+.search input,
+.search button {
+    font-size: 0.8rem;
+    height: 25px; /* 높이를 통일하여 라인을 깔끔하게 일치시킴 */
+    padding: 3px 6px;
+    border: 1px solid #1a1a1a;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.search button {
+	cursor: pointer;
+	background-color: #1a1a1a;
+    color: #ffffff;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.search button:hover {
+    background-color: #555555;
+    border-color: #555555;
+}
+
+#container {
+	width: 100%;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.main, footer {
+	text-align: center;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+}
+
+.about {
+	padding: 0 0 30px 0;
+	margin: 40px;
+}
+
+.border-section {
+	padding: 30px;
+}
+
+.post-list {
+	display: flex;
+ 	justify-content: center;
+  	align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.post-title {
+	padding: 0 0 10px 0;
+}
+
+.first-post {
+	display: flex;
+	flex-direction: flex-end;
+	align-items: center;
+    padding: 20px;
+    border: 1px solid #1a1a1a;
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+}
+
+.first-post-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 15px; /* 각 행 사이의 간격 */
+    flex-grow: 1; /* 남은 공간을 채우도록 설정 */
+    max-width: 500px; /* 우측 목록 전체의 최대 너비 제한 */
+}
+
+/* 우측 그룹: 나머지 글들을 위에서 아래로(수직) 쌓아 올림 */
+.sub-post-list {
+    display: flex;
+    flex-direction: column; /* 위에서 아래로 수직 정렬 */
+    gap: 15px; /* 각 행 사이의 간격 */
+    flex-grow: 1; /* 남은 공간을 채우도록 설정 */
+    max-width: 500px; /* 우측 목록 전체의 최대 너비 제한 */
+}
+
+.text-post {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 12px 10px;
+    border-bottom: 1px dashed #cccccc;
+    font-size: 0.9rem;
+}
+
+footer {
+	background-color: #555555;
+	color: white;
+	padding: 30px;
+}
+
+footer a {
+	color: white;
+	padding: 10px;
+}

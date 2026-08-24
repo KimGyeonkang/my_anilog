@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Track27 김견강</title>
+	<link rel="stylesheet" href="../css/main.css" />
+</head>
+<body>
+<header>
+	<section class="header-content">
+		<h1><a href="../index.html">MY ANILOG</a></h1>
+		<section class="header-right">
+			<nav>
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../member/member_login.html">Login</a></li>
+					<li><a href="../member/member_join.html">Join</a></li>
+				</ul>
+			</nav>
+			<section class="search">
+				<select>
+					<option>Title</option>
+					<option>Content</option>
+				</select>
+				<input type="text" size="10" />
+				<button onclick="location.href='board_list.html'">Search</button>
+			</section>
+		</section>
+	</section>
+<hr class="divider">
+</header>
+
+
+<section id="container">
+	<main class="main">
+	<fieldset>
+		<section class="board">
+		<h1>BOARD</h1>
+			<table class="board-table" style="margin-bottom: 10px; width: 40%;">
+				<colgroup>
+					<col width="15%" />
+					<col width="35%" />
+					<col width="15%" />
+					<col width="*" />
+				</colgroup>
+				<tr>
+					<td class="th-td">제목</td>
+					<td colspan="3">
+						<input type="text" size="70" style="width: 90%"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="th-td">내용</td>
+					<td colspan="3">
+						<textarea rows="30" cols="70" style="width: 90%; resize: none;"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td class="th-td">첨부</td>
+					<td colspan="3">
+						<input type="file" />
+					</td>
+				</tr>
+				<tr>
+					<td class="th-td">글쓴이</td>
+					<td>Name</td>
+					<td class="th-td">등록일자</td>
+					<td>
+						<input type="date" />
+					</td>
+				</tr>
+
+			</table>
+			<section class="button">
+				<a href="board_list.html">LIST</a>
+				&nbsp;&nbsp; / &nbsp;&nbsp;
+				<a href="">SUBMIT</a>
+			</section>
+		</section>
+	</fieldset>
+	</main>
+
+</section>
+<footer>
+	<section class="footer-left">
+		<h1><a href="index.html">MY ANILOG</a></h1>
+	</section>
+	<section class="footer-right">
+		<a href="">서비스 이용약관</a> | <a href="">개인정보 처리 방침</a><br>
+		<span>
+			Contact Me:<a href="mailto:'gyeonkangkim@gmail.com'">gyeonkangkim@gmail.com</a>
+			| <a>042-000-0000</a> | <a>010-0000-0000</a>
+		</span><br>
+		<span>Address: 대전 중구 계룡로 825 희영빌딩 5층, 7층</span><br>
+		<span>&copy; 2026 Kim Gyeonkang. All right reserved.</span>
+	</section>
+</footer>
+</body>
+</html>
