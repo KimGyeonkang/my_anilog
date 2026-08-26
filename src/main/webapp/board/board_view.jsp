@@ -50,6 +50,9 @@
 				<tr>
 					<td class="th-td">내용</td>
 					<td colspan="3">
+						<c:if test="${not empty board.getAttach()}">
+							<img src="attach/board/${board.getAttach()}" width="450" height="500" />
+						</c:if>
 						<textarea rows="30" cols="70" readonly style="width: 90%; resize: none; border: none; outline: none;">${board.getContent()}</textarea>
 					</td>
 				</tr>

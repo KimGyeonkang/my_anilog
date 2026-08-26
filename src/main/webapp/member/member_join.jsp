@@ -3,11 +3,11 @@
 <%@ include file="../common_header.jsp" %>
 <script>
 	function goSave() {
-		if(checkEmpty(mem.t_id, "용사님의 아이디가 필요합니다.")) return;
+		if (checkEmpty(mem.t_id, "용사님의 아이디가 필요합니다.")) return;
 		if (checkEmpty(mem.t_id_check, "아이디 중복 검사는 잊으시면 안 됩니다.")) return;
 		
 		if (mem.t_id_check.value == "이미 해당 아이디를 사용 중인 용사님이 계시네요. 더 멋진 이름이 있을 겁니다.") {
-			alert("더 유니크한 이름을 생각해주세요 용사님!");
+			alert("용사님만이 사용할 수 더 멋진 아이디를 생각해 봐요!");
 			mem.t_id.focus();
 			return;
 		}

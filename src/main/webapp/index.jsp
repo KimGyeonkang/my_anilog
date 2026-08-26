@@ -22,14 +22,12 @@
 			</section>
 			<section class="about-content">
 				<section class="about-header">
-					<h2>About This Site</h2>
-					<p style="margin-bottom:10px;">Welcome to my animation review blog</p>
+					<h2>About This Community</h2>
+					<p style="margin-bottom:10px;">Welcome to My Anilog, animation review community!</p>
 				</section>
 				<section class="about-text">
 					<p>
-						제 개인 블로그에 방문해주셔서 감사합니다.<br>
-						본 사이트는 각종 일본 애니메이션이나 서브컬처를 주인장 나름의 관점으로 자유롭게 풀어보기 위한 블로그입니다.<br>
-						재밌게 봐 주셨으면 좋겠습니다!<br>
+						애니메이션 리뷰 커뮤니티 My Anilog에 방문해주셔서 감사합니다!<br>
 						* 이미지는 생성형 AI Gemini를 활용해 만든, 주인장의 오너 캐릭터입니다.
 					</p>
 				</section>
@@ -45,7 +43,7 @@
 			<ul class="post-list">
 				<li class="first-post">
 					<section>
-						<img src="Gemini_Generated_Owner.png" width="100" height="100" />
+						<img src="attach/board/${list[0].getAttach()}" width="150" height="200" />
 					</section>
 					<section class="first-post-content">
 						<a href="javascript:goBoardView('${list[0].getNo()}')">
@@ -62,8 +60,8 @@
 						<a>
 							<p>
 								<c:choose>
-									<c:when test="${fn:length(list[0].getContent()) > 15}">
-										${fn:substring(list[0].getContent(), 0, 15)}...
+									<c:when test="${fn:length(list[0].getContent()) > 25}">
+										${fn:substring(list[0].getContent(), 0, 25)}...
 									</c:when>
 									<c:otherwise>${list[0].getContent()}</c:otherwise>
 								</c:choose>
@@ -75,7 +73,14 @@
 				<c:forEach items="${subList}" var="sub">
 					<li class="text-post">
 						<a href="javascript:goBoardView('${sub.getNo()}')">
-							<span>${sub.getTitle()}</span>
+							<span>
+								<c:choose>
+									<c:when test="${fn:length(sub.getTitle()) > 15}">
+										${fn:substring(sub.getTitle(), 0, 15)}...
+									</c:when>
+									<c:otherwise>${sub.getTitle()}</c:otherwise>
+								</c:choose>
+							</span>
 						</a>
 						<span>${sub.getReg_date()}</span>
 					</li>

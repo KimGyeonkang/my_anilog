@@ -8,18 +8,17 @@
 		if(checkEmpty(board.t_content, "내용을 입력하세요.")) return;
 		
 		// 1.확장자 검사
-		/*
-		var fileName = noti.t_attach.value;
+		var fileName = board.t_attach.value;
 		if(fileName != ""){ //  C:\fakepath\img_1.png
 			var pathFileName = fileName.lastIndexOf(".")+1;    //확장자 제외한 경로+파일명
 			var extension = (fileName.substr(pathFileName)).toLowerCase();	//확장자명
 			//파일명.확장자
-			if(extension != "pdf" && extension != "hwp" && extension != "png"){
-				alert(extension +" 형식 파일은 업로드 안됩니다. 한글, PDF, PNG 파일만 가능!");
+			if(extension != "jpg" && extension != "jpeg" && extension != "png" && extension != "gif"
+				&& extension != "webp"){
+				alert(extension +" 형식 파일 업로드는 지원하지 않습니다 용사님. 저희는 JPG, JPEG, PNG, GIF, WEBP 파일만 서포트해 드릴 수 있어요!");
 				return;
 			}		
 		}
-		*/
 		
 		// 2.첨부 용량 체크	
 		var file = board.t_attach;

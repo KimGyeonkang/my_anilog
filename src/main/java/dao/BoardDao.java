@@ -300,7 +300,7 @@ public class BoardDao {
 		String sql = "SELECT * FROM (\r\n"
 				+ "    SELECT ROWNUM AS RNUM, TBL.* \r\n"
 				+ "    FROM (\r\n"
-				+ "        SELECT NO, TITLE, CONTENT, \r\n"
+				+ "        SELECT NO, TITLE, CONTENT, ATTACH, \r\n"
 				+ "        TO_CHAR(REG_DATE, 'yy-MM-dd') AS REG_DATE\r\n"
 				+ "        FROM MY_김견강_BOARD\r\n"
 				+ "        WHERE "+select+" LIKE ?\r\n"
@@ -321,9 +321,10 @@ public class BoardDao {
 				   String no = rs.getString("NO");
 				   String title = rs.getString("TITLE");
 				   String content = rs.getString("CONTENT");
+				   String attach = rs.getString("ATTACH");
 				   String reg_date = rs.getString("REG_DATE");
 				   
-				   BoardDto board = new BoardDto(no, title, content, "attach", "reg_id", reg_date);
+				   BoardDto board = new BoardDto(no, title, content, attach, "reg_id", reg_date);
 				   recentlyBoardList.add(board);
 			   }
 			

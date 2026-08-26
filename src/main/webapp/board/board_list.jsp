@@ -21,7 +21,8 @@
 		<section class="board">
 		<fieldset>
 		<h1>BOARD</h1>
-		<p style="margin-bottom: 10px;">지금까지 ${totalCount} 건의 소중한 기록을 보관 중입니다!</p>
+		<!-- font-weight: bold; -> 굵은 글씨로 -->
+		<p style="margin-bottom: 10px;">지금까지 <span style="color: red; font-weight: bold;">${totalCount}</span> 건의 소중한 기록을 보관 중입니다!</p>
 			<table class="board-table" style="margin-bottom: 10px; width: 50%">
 				<colgroup>
 					<col width="10%" />
