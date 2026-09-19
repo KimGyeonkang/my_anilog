@@ -52,11 +52,11 @@
     </tr>
     <tr>
       <th>Backend</th>
-      <td>Java 21, JSP/Servlet</td>
+      <td>Java 21, Servlet</td>
     </tr>
     <tr>
       <th>Frontend</th>
-      <td>HTML, CSS, JavaScript</td>
+      <td>HTML, CSS, JavaScript, JSP</td>
     </tr>
     <tr>
       <th>Library</th>
