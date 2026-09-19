@@ -7,19 +7,18 @@
 </div>
 
 <h2>プロジェクト紹介</h2>
-  <p>「My Anilog」는, 원래 일본 애니메이션을 좋아해 일본어 공부를 시작한 작성자 본인(キム・ギョンガン／@KimGyeonkang)의 사소한 희망에서부터 시작되었습니다.</p>
+  <p>「My Anilog」は、もともと日本のアニメーションが好きで日本語の勉強を始めた、作成者本人(キム・ギョンガン／@KimGyeonkang)の些細な希望からスタートしました。 </p>
   <div align="center">
-    <h3>나처럼 일본 애니메이션이나 문화를 좋아하는 사람들이 서로 이야기할 수 있는 공간을 내 손으로 만들어보고 싶다!</h3>
+    <h3>私みたいにアニメーションやカルチャーが好きな人が自由に話し合えるスペースを自分の手で作成してみたいな！</h3>
   </div>
-  <p>이를 토대로 화면과 DB 설계부터, JSP/Servlet MVC 기반 회원 기능과 커뮤니티(BOARD) 게시판까지 일관적으로 개발해
-    '본격 애니메이션 애호가를 위한 커뮤니티 Web 서비스'를 실장했습니다.</p>
+  <p>その考えをきっかけに、画面とDB設計からJSP/Servlet MVCに基づく会員機能とコミュニティ掲示板（BOARD）まで一貫して開発し、「本格アニメーション愛好家のためのコミュニティWebサービス」を実装しました。</p>
   
 <h2>開発目的</h2>
-  <p>1. 교육기관에서 학습한 웹 기술을 살려, 실제 블로그와 커뮤니티에 가까운 서비스를 직접 실장 경험</p>
-  <p>2. Servlet MVC 구조 이해와 실천</p>
-  <p>3. Oracle DB 연계 및 데이터 처리 프로세스 이해와 실천</p>
-  <p>4. 일본 문화 애호가라는 실제 이용자를 상정해 유저 경험을 고려한 화면과 내용 설계</p>
-  <p>5. 회원과 비회원 간 기능 분리 이해와 실천</p>
+  <p>1. IT教育機関で学習したWeb開発の技術を活かし、実際のブログやコミュニティに近いサービスの実装を経験</p>
+  <p>2. Servlet MVCメカニズムの理解および実践</p>
+  <p>3. Oracle DB連携およびデータ処理プロセスの理解および実践<</p>
+  <p>4. 日本文化愛好家という実際のユーザーを想定し、User Experience(UX)に基づく画面と内容の設計</p>
+  <p>5. 会員と一般ユーザーの機能分離の理解および実践</p>
 
 <h2>技術スタック</h2>
   <table>
@@ -67,3 +66,25 @@
 
 <h2>DB設計</h2>
 <h3><a href="https://sqltoerdiagram.com/#s=zfZPNbtpAEMdfZTQnQEuxDaSpezLgFlQDkWUqRaVCC96CFXvtrg0Nijg1ueXYQy-peskDVMoh7xTyDpU_EvMlLqvx_H__mdkd-QppEKCK9th2phQJLpgIHZ-jKhMMv7uoYqUEXeaNmYBSZcgrJXi-uV3fPTw9_oL1z7v19b8kPxGMRgwiOnYZeClfGHIAAMeGBRWTGRVKQa4XgfsR8LnrQiAcj4olXLAlSdGAhuEPX2wY3kq5YQcauYxPo1nOKnsopx7b0PdrRcwdyTlRPQgoOVA7CFSPAcyjzlaT-v4YKaMcHfUbXWwOSqBcXl__ff79uP5z_3T_kEKCTUd2vIj4yIzzIP7YS7NLJ8qTQ14c8vfJfhs-FfbRZTdNXbN0sLSGocM4wbNd9_rwWTObbc1UCvUi9PoW9AaGAWdmp6uZ5_BJP8_aWx3L0HNYlqQcz5Bmv2fpPSuHFOkApVmW1mxvV8qkdicmuw3djIdp6R-0gWGBlKmm_nHUaW0Y63u1Y6QVXzU5dsTBWZzdLbEtvppf3hcJ2g512SRCFQM_jKaChUji0Ikcn4eoXmH6_8TRJarVU4JLVMuKcroimLz2i1J_ld6tVgQn1GOCZqKcatXaCcFwQl2GqvxGqp1UVwQp535Es3ZfvhKcObbNeBp7lM-pazj8IhFX_wE">My Anilog</a></h3>
+
+<h2>プロジェクト構成</h2>
+<pre>
+src/main
+├─java
+│  ├─command
+│  │  ├─board 　 #コミュニティ掲示板
+│  │  ├─index  　#メインページ
+│  │  └─member   #会員
+│  ├─controller   
+│  ├─dao   
+│  ├─dto   
+│  └─mail        #追加機能：ユーザーのメールアドレスに新しいパスワード送信
+└─webapp
+    ├─attach
+    ├─board 
+    ├─css
+    ├─js 　　　　　#共通のJavaScriptソース、jQuery Library
+    ├─member   
+    └─WEB-INF
+        └─lib     #Java Library
+</pre>
