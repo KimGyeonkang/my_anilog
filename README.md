@@ -28,7 +28,42 @@
       <col width="60%">
     </colgroup>
     <tr>
-      <th>オペレーティングシステム(OS)</th>
+      <th>Operation System</th>
       <td>Windows 10, 11</td>
     </tr>
+     <tr>
+      <th>IDE</th>
+      <td>Eclipse IDE 2024-09</td>
+    </tr>
+    <tr>
+      <th>Web Server(WAS)</th>
+      <td>Apache Tomcat 9.0</td>
+    </tr>
+    <tr>
+      <th>DataBase</th>
+      <td>Oracle 11g</td>
+    </tr>
+    <tr>
+      <th>DataBase Tool</th>
+      <td>SQL Developer</td>
+    </tr>
+    <tr>
+      <th>Version Control</th>
+      <td>Git, Github</td>
+    </tr>
+    <tr>
+      <th>Backend</th>
+      <td>Java 21, JSP/Servlet</td>
+    </tr>
+    <tr>
+      <th>Frontend</th>
+      <td>HTML, CSS, JavaScript</td>
+    </tr>
+    <tr>
+      <th>Library</th>
+      <td>JQuery, JSTL</td>
+    </tr>
   </table>
+
+<h2>DB設計</h2>
+<h3><a href="https://sqltoerdiagram.com/#s=zfZPNbtpAEMdfZTQnQEuxDaSpezLgFlQDkWUqRaVCC96CFXvtrg0Nijg1ueXYQy-peskDVMoh7xTyDpU_EvMlLqvx_H__mdkd-QppEKCK9th2phQJLpgIHZ-jKhMMv7uoYqUEXeaNmYBSZcgrJXi-uV3fPTw9_oL1z7v19b8kPxGMRgwiOnYZeClfGHIAAMeGBRWTGRVKQa4XgfsR8LnrQiAcj4olXLAlSdGAhuEPX2wY3kq5YQcauYxPo1nOKnsopx7b0PdrRcwdyTlRPQgoOVA7CFSPAcyjzlaT-v4YKaMcHfUbXWwOSqBcXl__ff79uP5z_3T_kEKCTUd2vIj4yIzzIP7YS7NLJ8qTQ14c8vfJfhs-FfbRZTdNXbN0sLSGocM4wbNd9_rwWTObbc1UCvUi9PoW9AaGAWdmp6uZ5_BJP8_aWx3L0HNYlqQcz5Bmv2fpPSuHFOkApVmW1mxvV8qkdicmuw3djIdp6R-0gWGBlKmm_nHUaW0Y63u1Y6QVXzU5dsTBWZzdLbEtvppf3hcJ2g512SRCFQM_jKaChUji0Ikcn4eoXmH6_8TRJarVU4JLVMuKcroimLz2i1J_ld6tVgQn1GOCZqKcatXaCcFwQl2GqvxGqp1UVwQp535Es3ZfvhKcObbNeBp7lM-pazj8IhFX_wE">My Anilog</a></h3>
