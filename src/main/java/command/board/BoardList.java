@@ -25,8 +25,8 @@ public class BoardList implements CommonExecute {
 		
 		/* paging 설정 start*/
 		int totalCount = dao.getTotalCount(select,search); // 전체 행수(게시글 건수)
-		int list_setup_count = 3;  //한페이지당 출력 행수(페이지당 게시글 몇 건?)
-		int pageNumber_count = 3;  //한페이지당 출력 페이지 갯수(페이지 번호는 몇 개까지 출력할까?)
+		int list_setup_count = 5;  //한페이지당 출력 행수(페이지당 게시글 몇 건?)
+		int pageNumber_count = 5;  //한페이지당 출력 페이지 갯수(페이지 번호는 몇 개까지 출력할까?)
 		
 		String nowPage = request.getParameter("t_nowPage"); // 현재 클릭한 페이지 번호(아래 페이지 목록에서 몇 번을 클릭했는지?)
 		/* 위 4줄 개념을 이해하는 게 가장 중요! */
